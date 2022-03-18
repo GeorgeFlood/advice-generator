@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Poppins:ital,wght@1,200&family=Space+Mono:ital@1&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(217, 19%, 38%);
+}
+
+.box {
+    margin: 20% 25%;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1.3rem;
+}
+
+.box h1 {
+    margin: 2rem 0;
+    color: rgba(255, 255, 255, 0.781)
+}
+
+.box p {
+    color: hsl(150, 100%, 66%)
+}
+
+.dice {
+    position: relative;
+    top: 5rem;
+    right: 35%;
+    height: 3rem;
+    width: 2.9rem;
+    background-color: white;
+    border: 3px solid hsl(150, 100%, 66%);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.mobile-divider {
+    display: none;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.dice:active {
+    box-shadow: 3px 3px 40px hsl(150, 100%, 66%);
+    transition: .2s;
+}
+
+.dice:hover {
+    border: 3px solid hsl(199, 100%, 66%);
+    transition: .2s;
+}
+
+@media only screen and (max-width: 600px) {
+    .desktop-divider {
+        display: none;
+    }
+
+    .mobile-divider {
+        display: block;
+        padding-top: .6rem;
+    }
+
+    .box {
+        margin: 55% 4%;
+        /* overflow: hidden; */
+    }
+
+    .dice {
+        left: 1%;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+
+    .box {
+        margin: 10% auto;
+    }
+
+    .dice {
+        position: absolute;
+        top: 54%;
+        right: 49.4%;
+    }
+}
